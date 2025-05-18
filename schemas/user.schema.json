@@ -13,5 +13,6 @@
       "type": "integer",
       "minimum": 14
     }
-  }
+  },
+  "required": ["name", "age"]
 }
