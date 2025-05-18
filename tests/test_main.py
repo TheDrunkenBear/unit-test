@@ -8,13 +8,13 @@ class TestMain(unittest.TestCase):
         with open("schemas/user.schema.json") as f:
             self.schema = f.read()
 
-        def test_get_user_validates_against_schema(self):
-            user = get_user()
+    def test_get_user_validates_against_schema(self):
+        user = get_user()
 
-            try:
-                validate(instance=user, schema=self.schema)
-            except ValidationError as e:
-                self.fail(f"Validation failed: {e}")
+        try:
+            validate(instance=user, schema=self.schema)
+        except ValidationError as e:
+            self.fail(f"Validation failed: {e}")
 
 
 if __name__ == "__main__":
