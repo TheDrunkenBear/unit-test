@@ -12,6 +12,10 @@
       "description": "age",
       "type": "integer",
       "minimum": 14
+    },
+    "gender": {
+      "description": "gender",
+      "enum": ["m", "f", "o"]
     }
   },
   "required": ["name", "age"]
