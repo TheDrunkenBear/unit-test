@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "user.schema.json",
+  "title": "User schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "user name",
+      "type": "string"
+    },
+    "age": {
+      "description": "age",
+      "type": "integer",
+      "minimum": 14
+    }
+  }
+}
